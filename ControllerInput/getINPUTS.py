@@ -41,8 +41,8 @@ class XboxController(object):
             "gas":self.RightTrigger,
             "reverse":self.LeftTrigger,
             "Air Roll/Powerslide":self.LeftBumper,
-            "xDirection":self.LeftJoystickX,
-            "ydirection":self.LeftJoystickY
+            "wheelangle":self.LeftJoystickX*45,
+            "ballToggle":self.Y,
         }
 
 
