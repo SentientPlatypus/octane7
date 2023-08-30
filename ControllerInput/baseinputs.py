@@ -24,11 +24,12 @@ mappings = {
 class Controller(object):
     """Class representing the PS4 controller. Pretty straightforward functionality."""
 
-    controller = None
-    input_data = {}
-
-    def init(self):
+    def __init__(self):
         """Initialize the joystick components"""
+
+        self.input_data = {}
+        for key in mappings.keys():
+            self.input_data[mappings[key]] = 0
         
         pygame.init()
         pygame.joystick.init()
@@ -54,9 +55,9 @@ class Controller(object):
                     else:
                         self.input_data[mappings[f"axis{event.axis}"]] = round(event.value, 4)
                 elif event.type == pygame.JOYBUTTONDOWN:
-                    self.input_data[f"button{event.button}"] = True
+                    self.input_data[f"button{event.button}"] = 0
                 elif event.type == pygame.JOYBUTTONUP:
-                    self.input_data[mappings[f"button{event.button}"]] = False
+                    self.input_data[mappings[f"button{event.button}"]] = 0
                 elif event.type == pygame.JOYHATMOTION:
                     self.input_data[f"hat{event.hat}"] = event.value
 
