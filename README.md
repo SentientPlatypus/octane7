@@ -103,8 +103,8 @@ I also worked on this part. I looked up jumping robots, and found a good spring 
 
 ### Built With
 
-* [![Next][python]][python-url]
-* [![Next][rpi]][rpi-url]
+* [![Python Badge][python]][python-url]
+* [![Raspberry Pi Badge][rpi]][rpi-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,8 +227,8 @@ Project Link: [https://github.com/Sentientplatypus/octane7](https://github.com/S
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: engine.png
-[jumper](jumper.png)
-[body](body.png)
+[jumper]: (jumper.png)
+[body]: (body.png)
 [python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://python.com
 [rpi]: https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white
