@@ -113,7 +113,7 @@ I also worked on this part. I looked up jumping robots, and found a good spring 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-First clone this repository. Then, wire up your RPI to an L298N motor driver as so: (insert diagram) Additionally, you want a second L298N for the steering, and another for boost.
+First clone this repository.  Then, wire up your RPI to an L298N motor driver as so: (insert diagram) Additionally, you want a second L298N for the steering, and another for boost.
 
 ### Prerequisites
 
