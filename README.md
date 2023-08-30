@@ -96,7 +96,7 @@ I worked on this part. We thought of using combustible rockets, then jet engines
 
 #### Jumping
 I also worked on this part. I looked up jumping robots, and found a good spring loaded flea like mechanism that looked promising. I printed a prototype, and it can jump quite a bit! However, we are also considering using the jumper from the spider jumping rc car toy. The downside would that it would be pushing off the ground itself instead of the wheels.
-[![jumper mechanism][jumper]]
+[![jumper mechanism][jumper]]()
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
