@@ -1,5 +1,4 @@
-#!/usr/bin/python
-from ControllerInput.baseinputs import Controller
+from baseinputs import Controller
 import RPi.GPIO as GPIO
 import threading
 
