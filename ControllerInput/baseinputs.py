@@ -55,7 +55,7 @@ class Controller(object):
                     else:
                         self.input_data[mappings[f"axis{event.axis}"]] = round(event.value, 4)
                 elif event.type == pygame.JOYBUTTONDOWN:
-                    self.input_data[f"button{event.button}"] = 0
+                    self.input_data[mappings[f"button{event.button}"]] = 1
                 elif event.type == pygame.JOYBUTTONUP:
                     self.input_data[mappings[f"button{event.button}"]] = 0
                 elif event.type == pygame.JOYHATMOTION:
@@ -65,10 +65,11 @@ class Controller(object):
     def read(self):
         return self.input_data
 
+
+
 def controller_main():
     xboxc = Controller()
-    xboxc.init()
     while 1:
         print(xboxc.read())
-
-controller_main()
+if __name__ == "__main__":
+    controller_main()
