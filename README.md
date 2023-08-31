@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Sentientplatypus/octane7">
-    <img src="body.png" alt="Logo">
+    <img src="images/body.png" alt="Logo">
   </a>
 
 <h3 align="center">Octane7</h3>
