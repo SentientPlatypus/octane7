@@ -226,9 +226,9 @@ Project Link: [https://github.com/Sentientplatypus/octane7](https://github.com/S
 [license-url]: https://github.com/Sentientplatypus/octane7/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: engine.png
-[jumper]: (jumper.png)
-[body]: (body.png)
+[product-screenshot]: images/engine.png
+[jumper]: (images/jumper.png)
+[body]: (images/body.png)
 [python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://python.com
 [rpi]: https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white
