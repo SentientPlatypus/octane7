@@ -92,7 +92,7 @@ This is the easiest part. Slap a dc motor onto the back wheels.
 Steve handled this. You see, real cars dont just have a servo that turns the wheels the same amount, as the outer wheels need to turn less than the inner wheels. Steve designed a differential, along with a steering mechanism.
 
 #### Propulsion/boost
-I worked on this part. We thought of using combustible rockets, then jet engines, and finally decided on an EDF. I caded multiple designs (one of them is shown above) and had Mukund print and test them.
+I worked on this part. We thought of using combustible rockets, then jet engines, and finally decided on an EDF. I caded multiple designs (one of them is shown above) and had Mukund print and test them. If we cant engineer a good EDF, I will simply buy the 7kg thrust nuke off amazon.
 
 #### Jumping
 I also worked on this part. I looked up jumping robots, and found a good spring loaded flea like mechanism that looked promising. I printed a prototype, and it can jump quite a bit! However, we are also considering using the jumper from the spider jumping rc car toy. The downside would that it would be pushing off the ground itself instead of the wheels.
