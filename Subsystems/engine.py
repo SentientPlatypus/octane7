@@ -56,10 +56,13 @@ class Engine(object):
 
 if __name__ == "__main__":
     from baseinputs import Controller
+    import signal
     xboxWireless = Controller()
     en = 22
     in1 = 17
     in2 = 27
     GPIO.setwarnings(False)    
     e = Engine(xboxWireless, en, in1, in2)
+    while 1:
+        pass
     
