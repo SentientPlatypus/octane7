@@ -118,8 +118,7 @@ First clone this repository.  Then, wire up your RPI to an L298N motor driver as
 ### Prerequisites
 
 These prerequisites should already be preinstalled on the raspberry pi.
-* npm
-  ```sh
+* ```sh
   pip3 install pygame
   ```
 
