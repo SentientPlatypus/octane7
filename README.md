@@ -122,7 +122,7 @@ These prerequisites should already be preinstalled on the raspberry pi.
   pip3 install pygame
   ```
 
-### Installation
+### Installation and Usage
 
 
 1. Clone the repo
@@ -130,20 +130,18 @@ These prerequisites should already be preinstalled on the raspberry pi.
    git clone https://github.com/Sentientplatypus/octane7.git
    ```
 
-And run `robot.py`. Its plug and play.
-
+2. Ensure you have the correct wiring. The wiring diagram looks like this.![Alt text](<images/octane7 diagram.png>) (You can power the pi with a battery pack).
+3.    ```sh
+   ssh pi@octane
+   ```
+4. ```cd octane7
+   ```
+5. run `robot.py`. Its plug and play.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 

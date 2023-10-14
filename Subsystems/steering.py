@@ -34,9 +34,9 @@ if __name__ == "__main__":
     from baseinputs import Controller
     import signal
     xboxWireless = Controller()
-    pwm = 19
+    pwm = 16
     GPIO.setwarnings(False)    
-    s = steering(xboxWireless, pwm)
+    s = Steering(xboxWireless, pwm)
     while 1:
         pass
     

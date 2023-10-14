@@ -7,7 +7,7 @@ class constants():
     in2 = 27
 
     "STEERING PINS"
-    steering_pwm = 19
+    steering_pwm = 16
 
 class octane(object):
 
