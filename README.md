@@ -126,21 +126,21 @@ These prerequisites should already be preinstalled on the raspberry pi.
 
 
 1. Clone the repo
-   ```sh
-   git clone https://github.com/Sentientplatypus/octane7.git
-   ```
+```sh
+git clone https://github.com/Sentientplatypus/octane7.git
+```
 
 2. Ensure you have the correct wiring. The wiring diagram looks like this.![Alt text](<images/octane7 diagram.png>) (You can power the pi with a battery pack).
 
 3. SSH into the raspberry pi with 
-  ```sh
-  ssh pi@octane
-  ``` 
+```sh
+ssh pi@octane
+``` 
   The password is `geneavianina`
 4. CD into the project directory
-  ```sh
-  cd Documents/octane7
-  ```
+```sh
+cd Documents/octane7
+```
 5. run `robot.py`. Its plug and play.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
