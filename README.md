@@ -135,7 +135,7 @@ These prerequisites should already be preinstalled on the raspberry pi.
    ssh pi@octane
    ``` 
    The password is `geneavianina`
-4. ```cd octane7
+4. ```cd Documents/octane7
    ```
 5. run `robot.py`. Its plug and play.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
