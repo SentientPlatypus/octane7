@@ -21,6 +21,7 @@ class Engine(object):
         self._monitor_thread = threading.Thread(target=self._monitor_engine, args=())
         self._monitor_thread.daemon = True
         self._monitor_thread.start()
+        print("ENGINE INITIALIZED".center(50, "-"))
 
     def _monitor_engine(self):
         self.p.start(0)
