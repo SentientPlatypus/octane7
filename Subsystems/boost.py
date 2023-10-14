@@ -40,9 +40,7 @@ class Booster(object):
 
 
 if __name__ == "__main__":
-    import signal
     from baseinputs import Controller
-    import signal
     xboxWireless = Controller()
     in1 = 23
     in2 = 24

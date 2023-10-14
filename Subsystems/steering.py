@@ -36,9 +36,7 @@ class Steering():
             self.servo.ChangeDutyCycle(duty)
 
 if __name__ == "__main__":
-    import signal
     from baseinputs import Controller
-    import signal
     xboxWireless = Controller()
     pwm = 16
     GPIO.setwarnings(False)    
