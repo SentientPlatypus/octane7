@@ -15,7 +15,7 @@ class Steering():
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(pwm, GPIO.OUT)
-        self.servo = GPIO.PWM(pwm)
+        self.servo = GPIO.PWM(pwm, 2)
 
         self._monitor_thread = threading.Thread(target=self._monitor_steering, args=())
         self._monitor_thread.daemon = True
@@ -23,11 +23,16 @@ class Steering():
 
     
     def _monitor_steering(self):
-        values = self.controller.read()
-        sx = values["sx"]
-
-        duty = map_range(sx, -32000, 32000, 2, 12)
-        self.servo.ChangeDutyCycle(duty)
+        while 1:
+            values = self.controller.read()
+            if values["y"]:
+                self.servo.stop()
+                GPIO.cleanup()
+                print("GPIO cleanup")
+                break
+            sx = values["sx"]
+            duty = map_range(sx, -32000, 32000, 2, 12)
+            self.servo.ChangeDutyCycle(duty)
 
 if __name__ == "__main__":
     import signal
@@ -37,7 +42,7 @@ if __name__ == "__main__":
     pwm = 16
     GPIO.setwarnings(False)    
     s = Steering(xboxWireless, pwm)
-    while 1:
+    while s._monitor_thread.is_alive():
         pass
     
 

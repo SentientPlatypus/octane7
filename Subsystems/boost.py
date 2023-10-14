@@ -33,7 +33,6 @@ class Booster(object):
             if boost:
                 GPIO.output(self.in3,GPIO.HIGH)
                 GPIO.output(self.in4,GPIO.LOW)
-                print("forward")
             else:
                 GPIO.output(self.in3,GPIO.LOW)
                 GPIO.output(self.in4,GPIO.LOW)   
@@ -48,6 +47,6 @@ if __name__ == "__main__":
     in2 = 24
     GPIO.setwarnings(False)    
     e = Booster(xboxWireless, in1, in2)
-    while 1:
+    while e._monitor_thread.is_alive():
         pass
     

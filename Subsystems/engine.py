@@ -38,11 +38,9 @@ class Engine(object):
             if movement > 0:
                 GPIO.output(self.in1,GPIO.HIGH)
                 GPIO.output(self.in2,GPIO.LOW)
-                print("forward")
             elif movement < 0:
                 GPIO.output(self.in1,GPIO.LOW)
                 GPIO.output(self.in2,GPIO.HIGH)
-                print("backward")
             else:
                 GPIO.output(self.in1,GPIO.LOW)
                 GPIO.output(self.in2,GPIO.LOW)   
@@ -58,6 +56,6 @@ if __name__ == "__main__":
     in2 = 22
     GPIO.setwarnings(False)    
     e = Engine(xboxWireless, en, in1, in2)
-    while 1:
+    while e._monitor_thread.is_alive():
         pass
     
