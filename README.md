@@ -133,7 +133,8 @@ These prerequisites should already be preinstalled on the raspberry pi.
 2. Ensure you have the correct wiring. The wiring diagram looks like this.![Alt text](<images/octane7 diagram.png>) (You can power the pi with a battery pack).
 3.    ```sh
    ssh pi@octane
-   ```
+   ``` 
+   The password is `geneavianina`
 4. ```cd octane7
    ```
 5. run `robot.py`. Its plug and play.
