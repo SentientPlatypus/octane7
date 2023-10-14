@@ -15,11 +15,12 @@ class Booster(object):
         GPIO.output(in3,GPIO.LOW)
         GPIO.output(in4,GPIO.LOW)
 
-        self._monitor_thread = threading.Thread(target=self._monitor_engine, args=())
+        self._monitor_thread = threading.Thread(target=self._monitor_boost, args=())
         self._monitor_thread.daemon = True
         self._monitor_thread.start()
+        print("BOOSTER INITIALIZED".center(50, "-"))
 
-    def _monitor_engine(self):
+    def _monitor_boost(self):
         while 1:
             values = self.controller.read()
 

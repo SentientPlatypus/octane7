@@ -20,6 +20,7 @@ class Steering():
         self._monitor_thread = threading.Thread(target=self._monitor_steering, args=())
         self._monitor_thread.daemon = True
         self._monitor_thread.start()
+        print("STEERING INITIALIZED".center(50, "-"))
 
     
     def _monitor_steering(self):
