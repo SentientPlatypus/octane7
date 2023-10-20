@@ -14,7 +14,9 @@ class Steering():
     def __init__(self, controller, pwm) -> None:
         self.controller = controller
 
-        self.servo = Servo(pwm)
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(pwm, GPIO.OUT)
+        self.servo = Servo(pwm, min_pulse_width=0.0006, max_pulse_width=0.0024)
 
         self._monitor_thread = threading.Thread(target=self._monitor_steering, args=())
         self._monitor_thread.daemon = True
@@ -31,7 +33,7 @@ class Steering():
                 print("GPIO cleanup")
                 break
             sx = values["sx"]
-            duty = map_range(sx, -1, 1, 0, 1)
+            duty = map_range(sx, -1, 1, -1, 1)
             self.servo.value = duty
 
 if __name__ == "__main__":
