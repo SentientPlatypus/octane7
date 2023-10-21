@@ -16,7 +16,7 @@ class Steering():
 
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(pwm, GPIO.OUT)
-        self.servo = Servo(pwm, min_pulse_width=0.0006, max_pulse_width=0.0024)
+        self.servo = Servo(pwm, min_pulse_width=0.0006, max_pulse_width=0.0024, frame_width= 5/1000)
 
         self._monitor_thread = threading.Thread(target=self._monitor_steering, args=())
         self._monitor_thread.daemon = True
